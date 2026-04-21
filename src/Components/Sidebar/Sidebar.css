@@ -1,0 +1,87 @@
+.sidebar {
+    background: #fff;
+    width: 15%;
+    position: fixed;
+    top: 60px;
+    height: calc(100vh - 60px);
+    padding-top: 20px;
+    padding-left: 2%;
+    overflow-y: auto;
+}
+
+/* Hide scrollbar */
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.side-link {
+    display: flex;
+    align-items: center; /* This centers text with the image */
+    margin-bottom: 20px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.side-link img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.side-link p {
+    font-size: 14px;
+    color: #5a5a5a;
+    /* font-weight: 500; */
+}
+
+.sidebar hr {
+    border: 0;
+    margin-left: 0px;
+    height: 1px;
+    background: #ccc;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+.subscribed-list h3 {
+    font-size: 13px;
+    margin: 20px 0;
+    color: #5a5a5a;
+}
+
+/* Sizing for the avatars in the subscribed list */
+.subscribed-list .side-link img {
+    width: 35px; 
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Active category styling */
+.side-link.active img{
+    border-bottom: 3px solid #ed1c24;
+    padding-bottom: 2px;
+}
+
+.active p {
+    color: #000;
+    font-weight: 600;
+}
+
+/* Toggled Small Sidebar */
+.small-sidebar {
+    width: 5%;
+    padding-left: 1%;
+}
+
+.small-sidebar p, .small-sidebar h3 {
+    display: none;
+}
+
+.small-sidebar hr {
+    width: 40%;
+}
+
+@media (max-width: 900px) {
+    .sidebar {
+        display: none;
+    }
+}

@@ -1,4 +1,4 @@
-export const API_KEY='AIzaSyDgFNdSFVdW6WgV7MO2QsO21CXHO5MsIXY'
+export const API_KEY = import.meta.env.VITE_API_KEY
 
 export const value_converter = (value) => {
   if (!value) return "0";   // <-- important fix
